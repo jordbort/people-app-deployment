@@ -4,8 +4,8 @@ const router = express.Router()
 // Models
 const {People} = require(`../models`)
 console.log(People)
-// Routes
 
+// Routes
 router.get(`/:id`, async (request, response) => {
     try {
         const foundPerson = await People.findById(request.params.id)
